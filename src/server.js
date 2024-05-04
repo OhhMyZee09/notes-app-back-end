@@ -5,7 +5,7 @@ const routes = require('./routes')
 const init = async () => {
     const server = Hapi.server({
         port: 5000,
-        host: 'localhost',
+        host: process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0',
         routes: {
             cors: true,
             // {
@@ -46,4 +46,4 @@ barulah ia dapat berkomunikasi antar layanan menggunakan protokol HTTP, RPC, dan
 
 
 */
-// * token PAT 2 BULAN GITHUB : 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
+// * token PAT 2 BULAN GITHUB : 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
