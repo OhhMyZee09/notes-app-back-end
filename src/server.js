@@ -22,6 +22,8 @@ const init = async () => {
 
 init(); 
 
+const zee = "Zikri rivandi"
+
 
 // TODO NOTE : 
 // * Nodemon : dengan tools ini kita tak perlu menjalankan ulang server ketika terjadi perubahan pada berkas JavaScript. Nodemon akan mendeteksi perubahan kode JavaScript dan mengeksekusi ulang secara otomatis.
